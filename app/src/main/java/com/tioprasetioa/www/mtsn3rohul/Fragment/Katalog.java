@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
@@ -87,6 +88,7 @@ public class Katalog extends Fragment implements Adapter_Button_Kategori.Itemcli
         Utils utils = new Utils();
         TextView textView = view.findViewById(R.id.examtx);
         TextView txhasil = view.findViewById(R.id.examhasil);
+        Toast.makeText(utils, "", Toast.LENGTH_SHORT).show();
 
         utils.Volley(getContext(), "https://mtsn3rokanhulu.sch.id/api/ExamBuku.php", textView, "item_id", new Utils.VolleyCallback() {
             @Override
