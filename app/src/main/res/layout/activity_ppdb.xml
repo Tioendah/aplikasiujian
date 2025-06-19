@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/toolbarppdb"
+        android:background="#285454">
+    </RelativeLayout>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webppdb"
+        android:scrollbars="vertical"
+        android:layout_above="@id/coordinatorlayoutppdb"
+        android:layout_below="@id/toolbarppdb"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coordinatorlayoutppdb"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBarppdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="#285454"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabAlignmentMode="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+                <include layout="@layout/navigationbar_ppdb" />
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/refreshppdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:elevation="4dp"
+            app:backgroundTint="@color/purple_200"
+            android:tint="@color/purple_700"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/bottomAppBarppdb"
+            app:srcCompat="@drawable/ic_baseline_refresh_24"
+            tools:ignore="ContentDescription"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_wa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="15dp"
+        android:elevation="4dp"
+        android:layout_above="@+id/coordinatorlayoutppdb"
+        app:backgroundTint="@color/green"
+        android:tint="@color/white"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_wa"
+        tools:ignore="ContentDescription"/>
+
+</RelativeLayout>

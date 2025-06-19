@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    tools:context=".Adapter.Adapter_Berita">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="85dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/id_berita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_alignParentRight="true"
+                app:cardCornerRadius="3dp"
+                android:id="@+id/card_berita"
+                android:layout_centerVertical="true"
+                android:layout_height="80dp">
+                <ImageView
+                    android:id="@+id/image_berita"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/shape_background" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/kategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/judul_berita"
+                android:fontFamily="@font/interfacemedium"
+                android:text="@string/prestasi_siswa"
+                android:textColor="@color/kuning"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/judul_berita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_toLeftOf="@+id/card_berita"
+                android:fontFamily="@font/fontsfreenetmasivablack"
+                android:text="@string/judul"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hari_berita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul_berita"
+                android:text="@string/hari"
+                android:textColor="@color/black"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:id="@+id/img_view"
+                android:layout_marginEnd="5dp"
+                android:layout_toLeftOf="@+id/view"
+                android:layout_below="@+id/judul_berita"
+                android:src="@drawable/view"/>
+
+            <TextView
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul_berita"
+                android:layout_toLeftOf="@+id/card_berita"
+                android:layout_marginEnd="20dp"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:text="@string/tanggal" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/card_berita"
+                android:layout_below="@+id/hari_berita">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Add Link"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_addlink"
+                    android:background="@drawable/gray_button_background"
+                    android:fontFamily="@font/interfacemedium"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

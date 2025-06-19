@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    android:layout_height="320dp"
+    tools:context=".Adapter.Adapter_Ekskul">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout_ekskul">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/image_ekskul"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/black_trasnparant"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_pembina_ekskul"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="7dp"
+            android:layout_above="@id/tv_ekskul"
+            android:layout_marginBottom="-20dp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/Judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_ekskul"
+            android:textColor="@color/white"
+            android:layout_marginStart="6dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/geomotos"
+            android:layout_toRightOf="@id/img_pembina_ekskul"
+            android:text="@string/judul" />
+
+        <TextView
+            android:id="@+id/tv_ekskul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ekskul"
+            android:layout_alignStart="@+id/img_pembina_ekskul"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/bebasnew"
+            android:text="@string/sepak_bola"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Desc_ekskul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Jadwal_ekskul"
+            android:layout_marginEnd="5dp"
+            android:layout_alignStart="@+id/img_pembina_ekskul"
+            android:fontFamily="@font/interfacemedium"
+            android:text="@string/deskripsi"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/Jadwal_ekskul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ekskul"
+            android:layout_alignStart="@+id/img_pembina_ekskul"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/Red"
+            android:fontFamily="@font/interfacemedium"
+            android:text="@string/jadwal_ekskul"
+            android:textSize="9sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bergabung"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:textSize="@dimen/small"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/interfacemedium"
+            android:textColor="@color/birutua"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

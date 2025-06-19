@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MTsN_3_Rokan_Hulu.iml" filepath="$PROJECT_DIR$/.idea/modules/MTsN_3_Rokan_Hulu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MTsN_3_Rokan_Hulu.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MTsN_3_Rokan_Hulu.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MTsN_3_Rokan_Hulu.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MTsN_3_Rokan_Hulu.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MTsN_3_Rokan_Hulu.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MTsN_3_Rokan_Hulu.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MTsN_3_Rokan_Hulu.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MTsN_3_Rokan_Hulu.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/prdownloader/MTsN_3_Rokan_Hulu.prdownloader.iml" filepath="$PROJECT_DIR$/.idea/modules/prdownloader/MTsN_3_Rokan_Hulu.prdownloader.iml" />
+    </modules>
+  </component>
+</project>

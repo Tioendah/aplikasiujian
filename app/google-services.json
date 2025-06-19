@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "886144801764",
+    "project_id": "peronpintar",
+    "storage_bucket": "peronpintar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886144801764:android:9d252652da0837a99d85f1",
+        "android_client_info": {
+          "package_name": "com.tioprasetioa.www.mtsn3rohul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886144801764-g8rmdrs9bg5erv0sm7dl80jf6003beun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Fi42lMwDhHcVMQJlacga76V-aV6b3BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886144801764-g8rmdrs9bg5erv0sm7dl80jf6003beun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

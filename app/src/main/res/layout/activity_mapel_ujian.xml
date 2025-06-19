@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Ui.ujian.MapelUjian">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_mapelUjian"
+        android:layout_height="220dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/shapeujian"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+        <ImageView
+            android:id="@+id/img_iconhome"
+            android:layout_width="63dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/ic_person_library"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/titlemapelUjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_below="@+id/img_iconhome"
+            android:fontFamily="@font/interfacemedium"
+            android:layout_marginTop="20dp"
+            android:text="ASESMENT SUMATIF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proximanovaregular"
+            android:text="KURIKULUM MERDEKA"
+            android:layout_alignLeft="@id/titlemapelUjian"
+            android:layout_below="@+id/titlemapelUjian"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:id="@+id/title_kelas"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/interfacemedium"
+            android:layout_marginTop="30dp"
+            android:text="KELAS"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HALO, "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/halo"
+            android:layout_marginTop="47dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/interfacemedium"
+            android:layout_toEndOf="@+id/img_iconhome"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Budi Prasetio"
+            android:layout_below="@+id/halo"
+            android:id="@+id/tx_User"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/interfacemedium"
+            android:layout_toEndOf="@+id/img_iconhome"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proximanovaregular"
+            android:text="VII.1"
+            android:id="@+id/tx_kelas"
+            android:layout_alignLeft="@id/title_kelas"
+            android:layout_below="@+id/title_kelas"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kelas"
+        android:visibility="gone"
+        android:id="@+id/tx_mapelujian"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/rc_mapelujian"
+        android:layout_below="@+id/rl_mapelUjian"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/ic_baseline_refresh_24"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/refresh_mapelujian"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

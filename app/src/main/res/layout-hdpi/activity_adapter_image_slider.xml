@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_auto_image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/v_tranparanblack"
+            android:background="@drawable/black_trasnparant" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_auto_image_slider"
+            android:textColor="@color/white"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginStart="30dp"
+            android:textSize="12sp"
+            android:id="@+id/id_sumber"
+            android:fontFamily="@font/proximanovaregular"/>
+        <TextView
+            android:id="@+id/tv_auto_image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/judul"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_above="@+id/tv2_autoimageslider"
+            android:fontFamily="@font/fontsfreenetmasivablack"
+            android:textColor="@color/kuning"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hari"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/tv3_autoimageslider"
+            android:layout_marginStart="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/interfacemedium"/>
+        <TextView
+            android:id="@+id/tv2_autoimageslider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv3_autoimageslider"
+            android:fontFamily="@font/interfacemedium"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="33dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/interfacemedium"
+            android:text="@string/baca_selengkapnya"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_bacaselekapnya"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+

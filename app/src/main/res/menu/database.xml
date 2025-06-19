@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/hapus"
+        android:id="@+id/hapus"/>
+
+    <item android:id="@+id/hapussemua"
+        android:title="@string/hapus_semua"/>
+
+    <item android:id="@+id/update"
+        android:title="@string/input_pulang"/>
+</menu>

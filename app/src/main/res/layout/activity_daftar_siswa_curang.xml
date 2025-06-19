@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Ui.ujian.Daftar_SiswaCurang">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rc_siswacurang"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/refresh_listsiswacurang"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/baseline_auto_delete_24"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/delete_listsiswacurang"
+        tools:ignore="ContentDescription" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/ic_baseline_refresh_24"
+        android:layout_marginEnd="40dp"
+        android:id="@+id/refresh_listsiswacurang"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

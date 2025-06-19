@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Font_family_light" parent="AppTheme">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="profil_guru" parent="AppTheme.Base">
+        <item name="fontFamily">@font/interfacemedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="profil_guru_subtitle" parent="AppTheme.Base">
+        <item name="fontFamily">@font/interfacemedium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

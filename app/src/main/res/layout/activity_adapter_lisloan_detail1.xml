@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    tools:context=".Adapter.Adapter_LisloanDetail1">
+
+    <ImageView
+        android:id="@+id/img_loanlist1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/shapedetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/tx_membernamelisloant"
+        android:layout_centerHorizontal="true"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tx_membernamelisloant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tx_memberidlistloan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/small10sp"
+        android:fontFamily="@font/interfacemedium"
+        android:text="@string/member_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tx_memberidlistloan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_listloan"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/interfacemedium"
+        android:text="@string/member_id"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rl_listloan"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_loanlist1"
+        android:layout_marginBottom="@dimen/small10sp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/call_user"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@+id/call_parent"
+            android:background="@drawable/btn_call"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:text="@string/call"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/call_parent"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/btn_call"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:text="@string/hubungi_norang_tua"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="152dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="grey">#E9EAEE</color>
+    <color name="gray">#DDDDDD</color>
+    <color name="Red">#F62626</color>
+    <color name="green">#5E8A2C</color>
+    <color name="abu">#0EF4DF</color>
+    <color name="kuning">#FFC107</color>
+    <color name="blue">#6b3571</color>
+    <color name="transparent">#00000000</color>
+    <color name="hitammuda">#FF0A2C32</color>
+    <color name="birutua">#431b3e</color>
+    <color name="orange">#f9853f</color>
+
+    <color name="colorPrimary">#5E8A2C</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorPrimaryLight">#9575cd</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- warna untuk dots yang tidak aktif -->
+    <color name="dot_dark_screen1">#EEEEEE</color>
+    <!-- warna untuk dots yang aktif -->
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+    </array>
+    <color name="dot_dark_screen2">#FFFFF0</color>
+    <color name="dot_dark_screen3">#FFFFF0</color>
+    <color name="dot_dark_screen4">#FFFFF0</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#090707</color>
+    <color name="dot_light_screen2">#090707</color>
+    <color name="dot_light_screen3">#090707</color>
+    <color name="dot_light_screen4">#090707</color>
+
+    <!-- warna login -->
+    <color name="login">#61556a</color>
+
+    <!-- Card View Home Pembelajaran -->
+    <color name="pos1end">#376DF6</color>
+    <color name="pos1start">#21E8AC</color>
+
+    <color name="pos2end">#FFC92B</color>
+    <color name="posstart">#FF7765</color>
+
+    <color name="pos3end">#376DF6</color>
+    <color name="pos3start">#376DF6</color>
+
+
+
+</resources>

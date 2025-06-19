@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Ui.ujian.MapelUjian">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_mapelUjianadmin"
+        android:layout_height="220dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/shapeujian"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+        <ImageView
+            android:id="@+id/img_iconadmin"
+            android:layout_width="63dp"
+            android:layout_height="71dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/ic_person_library"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/titlemapelUjianadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_below="@+id/img_iconadmin"
+            android:fontFamily="@font/interfacemedium"
+            android:layout_marginTop="20dp"
+            android:text="ASESMENT SUMATIF"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proximanovaregular"
+            android:text="KURIKULUM MERDEKA"
+            android:layout_alignLeft="@id/titlemapelUjianadmin"
+            android:layout_below="@+id/titlemapelUjianadmin"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:id="@+id/kurikulummerdeka"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HALO, "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/haloadmin"
+            android:layout_marginTop="47dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/interfacemedium"
+            android:layout_toEndOf="@+id/img_iconadmin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Budi Prasetio"
+            android:layout_below="@+id/haloadmin"
+            android:id="@+id/tx_Useradmin"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/interfacemedium"
+            android:layout_toEndOf="@+id/img_iconadmin"/>
+        <Button
+            android:id="@+id/btn_adminStatus"
+            android:layout_width="130dp"
+            android:background="@drawable/gray_button_background"
+            android:layout_height="40dp"
+            android:text="Kunci"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/kurikulummerdeka" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kelas"
+        android:visibility="gone"
+        android:id="@+id/tx_mapelSuperAdmin"/>
+    <Button
+        android:id="@+id/btn_adminListSiswaCurang"
+        android:layout_width="130dp"
+        android:background="@drawable/gray_button_background"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Daftar Siswa Curang"
+        android:layout_below="@+id/rl_mapelUjianadmin"
+        android:layout_centerHorizontal="true" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/rc_mapelujianadmin"
+        android:layout_below="@+id/btn_adminListSiswaCurang"/>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Adapter.Adapter_TampiData">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/isreturn"
+        android:visibility="gone"
+        android:id="@+id/isreturn"/>
+
+
+    <TextView
+        android:id="@+id/etdatapinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interfacemedium"
+        android:text="@string/pinjam_buku" />
+
+    <TextView
+        android:id="@+id/etnamabuku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/interfacemedium"
+        android:paddingLeft="10dp"
+        android:text="@string/nama_buku"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/etdatakembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interfacemedium"
+        android:text="@string/pinjam_buku" />
+    <TextView
+        android:id="@+id/ettglbukudikembalikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interfacemedium"
+        android:text="@string/pinjam_buku" />
+
+    <TextView
+        android:id="@+id/Waktuskrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etdatakembali"
+        android:visibility="gone"
+        android:fontFamily="@font/interfacemedium"
+        android:text="@string/pinjam_buku" />
+
+    <TextView
+        android:id="@+id/Denda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etdatakembali"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/interfacemedium"
+        android:text="0"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txdenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etdatakembali"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/interfacemedium"
+        android:text="@string/denda"
+        android:textColor="@color/black" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

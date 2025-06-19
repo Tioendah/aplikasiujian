@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@color/white"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ui.Home_PerangkatPembelajaran">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="10dp"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/perangkat_pembelajaran"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18sp"-->
+<!--            android:fontFamily="@font/sanserif"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/mts_negeri_3_rokan_hulu"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18sp"-->
+<!--            android:fontFamily="@font/interfacemedium"/>-->
+<!--    </LinearLayout>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardpos1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardPreventCornerOverlap="true">-->
+
+<!--        <net.colindodd.gradientlayout.GradientRelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:minHeight="100dp"-->
+<!--            android:padding="10dp"-->
+<!--            gl:end_color="@color/pos1end"-->
+<!--            gl:orientation="LEFT_RIGHT"-->
+<!--            gl:start_color="@color/pos1start">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/title_homepbm"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignBottom="@+id/title_homepbm"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:layout_marginBottom="0dp"-->
+<!--                android:fontFamily="@font/interfacemedium"-->
+<!--                android:text="@string/perangkat_pembelajaran"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_below="@id/title_homepbm"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_alignStart="@+id/title_homepbm"-->
+<!--                android:fontFamily="@font/interfacemedium"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/prota_prosem_rpp_dan_silabus" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/vii"-->
+<!--                android:textSize="40sp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentEnd="true" />-->
+
+<!--        </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:id="@+id/cardpos2"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardPreventCornerOverlap="true">-->
+
+<!--        <net.colindodd.gradientlayout.GradientRelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:minHeight="100dp"-->
+<!--            android:padding="10dp"-->
+<!--            gl:end_color="@color/pos2end"-->
+<!--            gl:orientation="LEFT_RIGHT"-->
+<!--            gl:start_color="@color/posstart">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/title_homepbm2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignBottom="@+id/title_homepbm"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:layout_marginBottom="0dp"-->
+<!--                android:fontFamily="@font/interfacemedium"-->
+<!--                android:text="@string/perangkat_pembelajaran"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_below="@id/title_homepbm2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_alignStart="@+id/title_homepbm2"-->
+<!--                android:fontFamily="@font/interfacemedium"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/prota_prosem_rpp_dan_silabus" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/viii"-->
+<!--                android:textSize="40sp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentEnd="true" />-->
+<!--        </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardPreventCornerOverlap="true"-->
+<!--        android:id="@+id/cardpos3">-->
+
+<!--        <net.colindodd.gradientlayout.GradientRelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:minHeight="100dp"-->
+<!--            android:padding="10dp"-->
+<!--            gl:end_color="@color/pos3end"-->
+<!--            gl:orientation="LEFT_RIGHT"-->
+<!--            gl:start_color="@color/pos3start">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/title_homepbm4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignBottom="@+id/title_homepbm"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginBottom="0dp"-->
+<!--                android:fontFamily="@font/interfacemedium"-->
+<!--                android:text="@string/perangkat_pembelajaran"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_below="@id/title_homepbm4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_alignStart="@+id/title_homepbm4"-->
+<!--                android:fontFamily="@font/interfacemedium"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:text="@string/prota_prosem_rpp_dan_silabus" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/ix"-->
+<!--                android:textSize="40sp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentEnd="true" />-->
+
+
+<!--        </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardPreventCornerOverlap="true"-->
+<!--        android:id="@+id/cardpos5">-->
+
+<!--        <net.colindodd.gradientlayout.GradientRelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:minHeight="100dp"-->
+<!--            android:padding="10dp"-->
+<!--            gl:end_color="@color/Red"-->
+<!--            gl:orientation="LEFT_RIGHT"-->
+<!--            gl:start_color="@color/green">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/title_homepbm5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignBottom="@+id/title_homepbm"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:layout_marginBottom="0dp"-->
+<!--                android:fontFamily="@font/interfacemedium"-->
+<!--                android:text="@string/modul_pembelajaran"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/title_homepbm5"-->
+<!--                android:layout_alignStart="@+id/title_homepbm5"-->
+<!--                android:fontFamily="@font/interfacemedium"-->
+<!--                android:text="@string/modul_disusun_oleh_guru_mtsn_3_rokan_hulu"-->
+<!--                android:textColor="@color/white" />-->
+
+<!--        </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+</LinearLayout>

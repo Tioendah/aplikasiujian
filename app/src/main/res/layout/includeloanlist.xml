@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Adapter.Adapter_ListLoan">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:background="@drawable/table_content_cell_bg"
+            android:fontFamily="@font/interfacemedium"
+            android:text="Member\nId"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/table_content_cell_bg"
+            android:textSize="10sp"
+            android:fontFamily="@font/interfacemedium"
+            android:text="Judul \nBuku"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="txreturn"
+            android:textSize="10sp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:fontFamily="@font/interfacemedium"
+            android:text="itemcode"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:background="@drawable/table_content_cell_bg"
+            android:textSize="10sp"
+            android:fontFamily="@font/interfacemedium"
+            android:text="Tanggal Peminjaman"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_content_cell_bg"
+            android:fontFamily="@font/interfacemedium"
+            android:text="Batas \nPengembalian"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

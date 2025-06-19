@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    tools:context=".Adapter.Adapter_Modul">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="5dp"
+        app:cardPreventCornerOverlap="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/gradient_backgorund"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Judul_Modul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sanserif"
+                android:text="@string/nama"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/Penulis_Modul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Judul_Modul"
+                android:fontFamily="@font/interfacemedium"
+                android:text="@string/nama"
+                android:textSize="12sp"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_modul"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Penulis_Modul"
+                android:layout_marginStart="-4dp"
+                android:progressTint="@color/white" />
+
+            <TextView
+                android:id="@+id/Deskripsi_Modul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar_modul"
+                android:layout_marginEnd="17dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="17dp"
+                android:layout_toStartOf="@+id/Unduh_Modul"
+                android:text="@string/nama"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:visibility="gone"
+                android:id="@+id/Url_Modul"/>
+
+
+            <Button
+                android:id="@+id/Unduh_Modul"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/progressBar_modul"
+                android:layout_marginEnd="7dp"
+                android:layout_toStartOf="@+id/Cancel_Modul"
+                android:background="@drawable/btn_corner"
+                android:text="@string/start" />
+
+            <Button
+                android:id="@+id/Cancel_Modul"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/progressBar_modul"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/btn_corner"
+                android:text="@string/cancel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@id/progressBar_modul"
+                android:textColor="@color/white"
+                android:fontFamily="@font/interfacemedium"
+                android:id="@+id/indikator_modul"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

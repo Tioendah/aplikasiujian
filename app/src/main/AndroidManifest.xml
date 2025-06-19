@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tioprasetioa.www.mtsn3rohul" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <queries>
+        <package android:name="com.alexmanzana.bubbleall" />
+        <package android:name="floatbrowser.floating.browser.float.web.window" />
+        <package android:name="com.lwi.android.flapps" />
+        <package android:name="com.jack850628.floatwindow" />
+        <package android:name="com.farmerbb.taskbar" />
+        <package android:name="com.applay.overlay" />
+        <package android:name="com.sns.suraj.floatingandmultitaskingapps" />
+        <package android:name="com.artds.split.dual.screen.nb" />
+        <package android:name="com.inventivestudio.floating_menu" />
+        <package android:name="com.xpp.floatbrowser" />
+        <package android:name="com.dsandds.flaotingapps.sp" />
+        <package android:name="comspli.exaspli.splitscspli" />
+        <package android:name="com.split.screen.shortcut.overview.accessibility.notification" />
+        <package android:name="com.split.screen" />
+        <package android:name="com.maika.floatee" />
+        <package android:name="com.fooview.android.fooview" />
+        <package android:name="cz.rdq.floatingtools" />
+        <package android:name="com.facebook.orca" />
+        <package android:name="com.vmos.google" />
+    </queries>
+
+    <uses-permission android:name="com.google.android.c2dm.permission.Receive" />
+    <uses-permission android:name="com.google.android.c2dm.permission.Receive" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="34"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="34" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DEVICE_ADMINS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.BIND_DEVICE_ADMIN"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="MissingClass"
+        tools:replace="android:icon"
+        tools:targetApi="m" >
+        <activity
+            android:name=".Ui.dataalumni.Dataalumni_add"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.dataalumni.DataAlumni"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ppdb.TesAkademik_PPDB"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ppdb.Ujian_PPdb"
+            android:exported="false" />
+        <activity
+            android:name=".Utils.AppChecker"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ujian.Daftar_SiswaCurang"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.Adapter_SiswaCurang"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ppdb.PPDB"
+            android:exported="false"
+            android:theme="@style/Tema2"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Ui.ujian.Super_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.Adapter_MapelAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ujian.Simulasi_Ujian"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.admin.Admin_Ujian"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.Adapter_MapelUjian"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ujian.MapelUjian"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter.Adapter_Home_Ujian"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.ujian.BerandaUjian"
+            android:exported="false"
+            android:theme="@style/TemaUjian" />
+        <activity
+            android:name=".Ui.Create_Member"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.admin.Admin_Berita"
+            android:exported="false" />
+        <activity
+            android:name=".Include"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.Input_Loan"
+            android:exported="false" />
+        <activity
+            android:name=".Response_UpdateLoan"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter_ListLoan2"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter_LisloanDetail1"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.Detail_LoanList"
+            android:exported="false" />
+        <activity
+            android:name=".Adapter_ListLoan"
+            android:exported="false" />
+        <activity
+            android:name=".TesEroor"
+            android:exported="false" />
+        <activity
+            android:name=".Ui.PerangkatPbmIX"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name="." -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Ui.PeranglkatPbmVIII"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Adapter.Adapter_PerangkatPbmVIII" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Ui.Osima"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Adapter.Adapter_Osima" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Ui.WebViewBerita"
+            android:exported="false"
+            android:theme="@style/TemaIntro" />
+        <activity
+            android:name=".Ui.Home_PerangkatPembelajaran"
+            android:exported="false"
+            android:theme="@style/TemaIntro" />
+        <activity
+            android:name=".Ui.Splash_Screen"
+            android:exported="false"
+            android:theme="@style/TemaIntro" />
+        <activity
+            android:name=".Ui.Modul"
+            android:exported="false"
+            android:theme="@style/Tema4" />
+        <activity
+            android:name=".Ui.Perangkat_Pembelajaran"
+            android:exported="false"
+            android:theme="@style/Tema4" />
+        <activity
+            android:name=".Ui.Ekskul"
+            android:exported="false"
+            android:theme="@style/Tema5" />
+        <activity
+            android:name=".Ui.Profil_Sekolah"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+
+        <activity
+            android:name=".Ui.RekapAbsen.Utils.Adapter_Pdf"
+            android:exported="true" />
+        <activity
+            android:name=".Ui.RekapAbsen.Pdf.Pdf_Activity"
+            android:exported="true"
+            android:theme="@style/Tema3" />
+        <activity
+            android:name=".Ui.RekapAbsen.Update"
+            android:exported="true"
+            android:theme="@style/Tema2" />
+        <activity
+            android:name=".Ui.RekapAbsen.View_Rekap_Absen"
+            android:exported="true"
+            android:theme="@style/Tema2" />
+        <activity
+            android:name=".Ui.RekapAbsen.Adapter_RekapAbsen"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Ui.RekapAbsen.Rekap_Absen"
+            android:exported="true"
+            android:theme="@style/Tema2" />
+        <activity
+            android:name=".Ui.Profil_Guru"
+            android:exported="true"
+            android:theme="@style/Tema2" />
+        <activity
+            android:name=".Adapter.Adapter_ProfilGuru"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Adapter.Adapter_DetailBuku"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Ui.Detail_Buku"
+            android:exported="true"
+            android:theme="@style/Tema3" />
+        <activity
+            android:name=".Adapter.Adapter_Katalog"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Adapter.Adapter_TampiData"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Adapter.Adapter_Berita"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Ui.Login"
+            android:theme="@style/Temalogin" />
+        <activity
+            android:name=".Adapter.Adapter_Galeri_Home"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Adapter.Adapter_IconHome"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Ui.Actiivity_Identitas" />
+        <activity
+            android:name=".Ui.ujian.CekActivity"
+            android:exported="false"
+            android:theme="@style/Tema5" />
+        <activity
+            android:name=".Adapter.Adapter_ImageSlider"
+            tools:ignore="Instantiatable" /> <!-- <service android:name=".Services.Notif_Servis" /> -->
+        <activity
+            android:name=".Ui.Intro"
+            android:exported="true"
+            android:theme="@style/Tema2"
+            tools:ignore="MissingClass" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ui.ujian.Soal_Ujian"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Tema2" >
+            <intent-filter>
+                <action android:name="android.settings.SETTINGS" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <item android:name="android:windowFullscreen">true</item> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".NotificationClickReceiver"
+            android:exported="true" />
+
+        <service
+            android:name=".Services.ServiceAlarm"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Services.ServiceAlarm"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Services.FirebaseService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".MyDeviceAdminReceiver"
+            android:description="@string/app_name"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_receiver" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Ui.MainActivity"
+            android:theme="@style/Tema2" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="Chanel_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7121922599541432~3898169833" />
+    </application>
+
+</manifest>

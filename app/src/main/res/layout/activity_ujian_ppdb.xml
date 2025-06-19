@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    tools:context=".Ui.ppdb.Ujian_PPdb">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/toolbaakdm"
+        android:background="#f9853f">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/fontsfreenetmasivablack"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                android:id="@+id/titleUjian_akdm"
+                android:text="Tes AKademik"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/coordinatorlayout_akdm"
+        android:layout_below="@+id/toolbaakdm">
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/webUjian_akdm"/>
+
+        <FrameLayout
+            android:id="@+id/frame_akdm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/rlUjian_akdm"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coordinatorlayout_akdm"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBarppdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="#f9853f"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabAlignmentMode="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58.0dip"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/refresh_akdm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:elevation="4dp"
+            app:backgroundTint="@color/purple_200"
+            android:tint="@color/purple_700"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/bottomAppBarppdb"
+            app:srcCompat="@drawable/ic_baseline_refresh_24"
+            tools:ignore="ContentDescription"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
